@@ -31,9 +31,9 @@ module.exports = {
       { test: /\.vue$/, use: 'vue-loader' } // 处理 .vue 文件的 loader
     ]
   },
-  // resolve: {
-  //   alias: { // 修改 Vue 被导入时候的包的路径
-  //     "vue$": "./node_modules/vue/dist/vue.js"
-  //   }
-  // }
+  resolve: {
+    alias: { // 修改 Vue 被导入时候的包的路径
+      "vue$": "./node_modules/vue/dist/vue.js"
+    }
+  }
 }
